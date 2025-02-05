@@ -1,0 +1,10 @@
+{
+  "contacts": [
+    { "name": "John", "age": "25", "email": "john@gmail.com" },
+    { "name": "Miry", "age": "30", "email": "mary@gmail.com" },
+    { "name": "Tom", "age": "35", "email": "tom@gmail.com" },
+    { "name": "Mike", "age": "40", "email": "mike@gmail.com" },
+    { "name": "jhon", "age": "25", "email": "jhon@gmail.com" },
+    { "name": "tom", "age": "25", "email": "tom@gmail" }
+  ]
+}

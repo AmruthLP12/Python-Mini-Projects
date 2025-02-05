@@ -1,3 +1,5 @@
+import json
+
 def add_person():
     name = input("Enter your name: ")
     age = input("Enter your age: ")
@@ -47,12 +49,8 @@ def search_person(people):
 print("Hi, Welcome to Contact Management System !")
 print()
 
-people = [
-    {"name": "John", "age": "25", "email": "john@gmail.com"},
-    {"name": "Miry", "age": "30", "email": "mary@gmail.com"},
-    {"name": "Tom", "age": "35", "email": "tom@gmail.com"},
-    {"name": "Mike", "age": "40", "email": "mike@gmail.com"},
-]
+with open("contacts.json", "r") as file:
+    people = json.load(file)["contacts"]
 
 while True:
     print("Contact List size:", len(people))
@@ -69,3 +67,6 @@ while True:
         break
     else:
         print("Invalid Input!")
+        
+with open("contacts.json", "w") as file:
+    json.dump({"contacts": people}, file)
