@@ -68,4 +68,4 @@ while True:
     elif commend == "q":
         break
     else:
-        print("Invalid Command!")
+        print("Invalid Input!")
